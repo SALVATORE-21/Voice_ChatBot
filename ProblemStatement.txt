@@ -1,0 +1,49 @@
+Develop a fully voice-enabled chatbot capable of seamless interaction using spoken
+English. The system should integrate the following components: 
+
+1. Speech-to-Text (ASR): Accurately transcribe user speech into text. 
+2. Large Language Model (LLM): Process the transcribed input to generate
+intelligent, contextually appropriate responses. 
+3. Text-to-Speech (TTS): Convert the chatbot’s responses into natural, high-
+quality speech for clear communication. 
+
+The chatbot should support end-to-end voice-based interaction, where users can speak
+to the system and receive spoken responses. The solution must ensure smooth, real-
+time conversations with minimal delays. 
+You can choose from various solutions for each component based on performance,
+scalability, and latency, including cloud-based services, other online APIs, standard web
+services like Web Speech API, or open-source tools and libraries. Each component
+should integrate seamlessly to provide a cohesive and intuitive experience for users. 
+Evaluation Criteria: 
+
+1. Code Quality: The implementation must adhere to best coding practices
+and be clean, well-organized, and maintainable. 
+2. Response Latency: Interaction should be fast, with minimal delays in
+transcription, response generation, and speech synthesis. 
+3. Response Quality: Ensure high ASR accuracy, meaningful and relevant
+LLM responses, and clear, natural TTS output. 
+4. Asynchronous Processing and Optimization: Usage of async
+processing, streaming APIs, and optimization to minimize latency.
+
+-----------------------------------------------
+
+libraries Used
+
+- sounddevice : Helps in recording audio from microphone
+- numpy : Handling numerical data like audio signals
+- soundfile : Helps saving recorded file in wav format
+- googl.cloud / texttospeech : Enables GoogleCloudTTS for speech synthesis
+- faster_whisper : A lightweight speech to text model for faster/smooth synthesis
+
+Prompts Used
+-- Error Handling
+1. Guide me to setup GoogleTTS credentials for 300 credit free limit.
+2. Whisper model missed 'libc' on windows does faster_whisper work?
+3. Explain the architecture of faster_whisper.
+4. shm.dll missing in my local windows give me correct version of Pytorch as I donot have an NVIDIA GPU or CUDA.
+5. Command to check sound devices available sd.query_devices() current error : "Error querying device -1".
+6. For my above code snippet add symbols and emojis to for better understaning of conversation.
+
+
+
+
